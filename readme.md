@@ -22,9 +22,9 @@ Feel free to contribute! Fork the project, create a branch, and submit a pull re
 -->
 ## 📧 Contact
 For any questions or suggestions, contact **cttbiel@gmail.com or @CttBiel**.
-Have a look on my CV at OverLeaf here
-PT/BR https://www.overleaf.com/read/bptfwbszhcxy#196b2b
-EN/US https://www.overleaf.com/read/pgrczmymnpjx#c98e75
+-Have a look on my CV at OverLeaf here
+-PT/BR https://www.overleaf.com/read/bptfwbszhcxy#196b2b
+-EN/US https://www.overleaf.com/read/pgrczmymnpjx#c98e75
 
 
 ---
