@@ -1,4 +1,5 @@
-# 🏗️ Hello and be welcome to my personal portfolio
+<!--Introduction -->
+<h1 align="center">Hey there! 👋 Welcome to my Portfolio!</h1>
 
 I am Gabriel Carvalho, a 23yrs old software engineer from Belo Horizonte, Brasil 🇧🇷
 
@@ -22,10 +23,11 @@ Feel free to contribute! Fork the project, create a branch, and submit a pull re
 -->
 ## 📧 Contact
 For any questions or suggestions, contact **cttbiel@gmail.com or @CttBiel**.
+<!--
 -Have a look on my CV at OverLeaf here
 -PT/BR https://www.overleaf.com/read/bptfwbszhcxy#196b2b
 -EN/US https://www.overleaf.com/read/pgrczmymnpjx#c98e75
-
+-->
 
 ---
 © 2025 Gabriel Carvalho. All rights reserved. 
