@@ -1,33 +1,23 @@
-<!--Introduction -->
-<h1 align="center">Hey there! 👋 Welcome to my Portfolio!</h1>
+<!-- Introduction -->
+<h1 align="center">Hey there! 👋 Welcome to my Portfolio</h1>
 
-I am Gabriel Carvalho, a 23yrs old software engineer from Belo Horizonte, Brasil 🇧🇷
-
-
-<!--## 🚀 Features
-- 🛒 Product listing & search
-- ❤️ Favorites system
-- 🛍️ Shopping cart management
-- 🔐 Secure checkout via Mercado Pago
-- 📦 Order tracking (future update)
-
-## 🛠️ Technologies Used
-- **Backend:** Django, Django REST Framework
-- **Frontend:** React, JavaScript, HTML, CSS
-- **Database:** PostgreSQL (or SQLite for development)
-
-
-
-## 🤝 Contributing
-Feel free to contribute! Fork the project, create a branch, and submit a pull request. 
--->
-## 📧 Contact
-For any questions or suggestions, contact **cttbiel@gmail.com or @CttBiel**.
-<!--
--Have a look on my CV at OverLeaf here
--PT/BR https://www.overleaf.com/read/bptfwbszhcxy#196b2b
--EN/US https://www.overleaf.com/read/pgrczmymnpjx#c98e75
--->
+<p align="center">
+  I'm <strong>Gabriel Carvalho</strong>, a 23-year-old Software Engineering student from Belo Horizonte, Brazil 🇧🇷.<br/>
+  Passionate about technology, problem-solving, and building solutions that make a difference.
+</p>
 
 ---
-© 2025 Gabriel Carvalho. All rights reserved. 
+
+## 📫 Contact
+
+Feel free to reach out for collaboration, questions, or just to connect:
+
+📧 Email: **cttbiel@gmail.com**  
+🔗 LinkedIn: [@CttBiel](https://www.linkedin.com/in/cttbiel)  
+🐙 GitHub: [@CttBiel](https://github.com/CttBiel)
+
+---
+
+<p align="center">
+  © 2025 Gabriel Carvalho • All rights reserved.
+</p>
