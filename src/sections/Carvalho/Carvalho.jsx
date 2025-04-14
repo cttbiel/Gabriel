@@ -1,14 +1,23 @@
 import styles from './CarvalhoStyles.module.css';
 import spideygab from '../../assets/spideygab.png';
-import themeIcon from '../../assets/sun.svg';
-import linkedinIcon from '../../assets/linkedin-light.svg';
-import githubIcon from '../../assets/github-light.svg';
-import twitterIcon from '../../assets/twitter-light.svg';
+import sun from '../../assets/sun.svg';
+import moon from '../../assets/moon.svg';
+import linkedinLight from '../../assets/linkedin-light.svg';
+import linkedinDark from '../../assets/linkedin-dark.svg';
+import githubLight from '../../assets/github-light.svg';
+import githubDark from '../../assets/github-dark.svg';
+import twitterLight from '../../assets/twitter-light.svg';
+import twitterDark from '../../assets/twitter-dark.svg';
 import CV from '../../assets/cv.pdf';
 import {useTheme} from '../../common/ThemeContext';
 
 function Carvalho() {
   const { theme, toggleTheme} = useTheme();
+
+  const themeIcon = theme === 'light' ? sun : moon;
+  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const githubIcon = theme === 'light' ? githubLight : githubDark;
+  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
 
   return <section id='carvalho' className={styles.container}>
     <div className={styles.colorModeContainer}> 

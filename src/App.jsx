@@ -3,9 +3,10 @@ import Carvalho from './sections/Carvalho/Carvalho';
 
 function App() {
 
-  return <>
+  return (<>
     <Carvalho/>
-  </>;
+  </>
+  );
   
 }
 
