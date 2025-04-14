@@ -31,7 +31,7 @@ function Projects() {
             <ProjectCard
                 src={fitLift} link="https://github.com/cttbiel/text-decoder" 
                 h3="Text Decoder"
-                p={"So.. Do you have a secret message that no one should be able to understand? Here you can decode it."}
+                p={"Decode it."}
             />
         </div>
     </section>

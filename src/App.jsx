@@ -7,12 +7,12 @@ function App() {
 
   return (
     <>
-      <Carvalho/>
-      <Projects/>
-      <Skills/>
+      <Carvalho />
+      <Projects />
+      <Skills />
     </>
   );
   
 }
 
-export default App
+export default App;
