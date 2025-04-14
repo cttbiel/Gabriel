@@ -1,14 +1,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    justify-content: center;
     gap: 20px;
     text-align: center;
-    /*height: 100dvh;*/
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 500px;
 
     .carvalho {
         max-width: 200px;
@@ -18,22 +15,22 @@
         display: flex;
         gap: 25px;
         justify-content: center;
-
-        a{
-            margin: 0;
-
-            img {
-                width: 30px;
-            }
+    
+        a {
+          margin: 0;
+    
+          img {
+            width: 30px;
+          }
         }
-    }
-
-    a {
+      }
+    
+      a {
         width: fit-content;
         align-self: center;
-    }
-
-    button {
+      }
+    
+      button {
         background-color: var(--btn-color);
         color: var(--btn-text-color);
         border: none;
@@ -42,42 +39,43 @@
         height: 50px;
         font-size: 20px;
         font-weight: bold;
-        box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    }
-
-    button:hover {
+      }
+    
+      button:hover {
         transform: scale(1.05);
-    }
-
-    button:active {
+      }
+    
+      button:active {
         transform: translateY(2px);
-        box-shadow: 0 2px 2px rgba(0,0,0,0.25);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      }
     }
-}
-
-.colorModeContainer {
-    position: relative;
-}
-
-.colorMode {
-    position: absolute;
-
-}
-
-.colorMode:hover {
-    cursor: pointer;
-}
-
-.description {
-    max-width: 24ch;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    
+    .colorModeContainer {
+      position: relative;
+    }
+    
+    .colorMode {
+      position: absolute;
+      right: 0;
+      width: 25px;
+    }
+    
+    .colorMode:hover {
+      cursor: pointer;
+    }
+    
+    .description {
+      max-width: 24ch;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
