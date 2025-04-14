@@ -42,10 +42,10 @@ function Carvalho() {
         </a>
 
       </span>
-      <p>Passionate for developing modern software solutions.</p>
+      <p className={styles.description}>Passionate for developing modern software solutions.</p>
 
       <a href={CV} download>
-        <button className="hover">Download Resume</button>
+        <button className="hover">Resume</button>
       </a>
     </div>
   </section>;
