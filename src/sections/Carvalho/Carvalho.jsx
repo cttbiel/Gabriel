@@ -8,7 +8,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
-import CV from '../../assets/cv.pdf';
+import CV from '../../assets/Gabriel Carvalho CV.pdf';
 import {useTheme} from '../../common/ThemeContext';
 
 function Carvalho() {
