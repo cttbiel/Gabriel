@@ -1,9 +1,9 @@
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/viberr.png';
 import ProjectCard from '../../common/ProjectCard';
-import freshBurger from '../../assets/fresh-burger.png'
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import secretNumber from '../../assets/Secret Number.jpg'
+import brickStore from '../../assets/BrickStore Logo.png';
+import textDecoder from '../../assets/Text Decoder.png';
 
 function Projects() {
   return (
@@ -17,19 +17,19 @@ function Projects() {
             />
 
             <ProjectCard
-                src={freshBurger} link="https://github.com/cttbiel/secret_number_game" 
+                src={secretNumber} link="https://github.com/cttbiel/secret_number_game" 
                 h3="Secret Number Game"
                 p={"What is the secret number?"}
             />
 
             <ProjectCard
-                src={hipsster} link="https://github.com/cttbiel/brickstore" 
+                src={brickStore} link="https://github.com/cttbiel/brickstore" 
                 h3="BrickStore"
                 p={"Building Value, One Brick At A Time"}
             />
 
             <ProjectCard
-                src={fitLift} link="https://github.com/cttbiel/text-decoder" 
+                src={textDecoder} link="https://github.com/cttbiel/text-decoder" 
                 h3="Text Decoder"
                 p={"Decode it."}
             />
