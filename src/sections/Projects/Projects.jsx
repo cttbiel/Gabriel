@@ -25,7 +25,7 @@ function Projects() {
             <ProjectCard
                 src={hipsster} link="https://github.com/cttbiel/brickstore" 
                 h3="BrickStore"
-                p={"Your Online Construction Marketplace"}
+                p={"Building Value, One Brick At A Time"}
             />
 
             <ProjectCard
