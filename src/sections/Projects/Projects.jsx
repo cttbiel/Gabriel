@@ -1,9 +1,9 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
+import musique from '../../assets/musique.png';
 import ProjectCard from '../../common/ProjectCard';
 import secretNumber from '../../assets/Secret Number.jpg'
 import brickStore from '../../assets/BrickStore Logo.png';
-import textDecoder from '../../assets/Text Decoder.png';
+import textDecoder from '../../assets/textdecoder.png';
 
 function Projects() {
   return (
@@ -11,9 +11,9 @@ function Projects() {
         <h1 className='sectionTitle'>Projects</h1>
         <div className={styles.projectsContainer}>
             <ProjectCard
-                src={viberr} link="https://github.com/cttbiel/spotify" 
-                h3="Music Streaming Platform"
-                p={"Music App"}
+                src={musique} link="https://github.com/cttbiel/spotify" 
+                h3="Feel the Rythm of Life"
+                p={"Musiqué"}
             />
 
             <ProjectCard
