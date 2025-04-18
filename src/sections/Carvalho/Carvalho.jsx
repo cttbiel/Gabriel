@@ -2,12 +2,12 @@ import styles from './CarvalhoStyles.module.css';
 import spideygab from '../../assets/spideygab.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import githubLight from '../../assets/github-light.svg';
-import githubDark from '../../assets/github-dark.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
+import linkedinLight from '../../assets/linkedin light.png';
+import linkedinDark from '../../assets/linkedin dark.png';
+import githubLight from '../../assets/github light.png';
+import githubDark from '../../assets/github dark.png';
+import instagramLight from '../../assets/instagram light.png';
+import instagramDark from '../../assets/instagram.png';
 import CV from '../../assets/Gabriel Carvalho CV.pdf';
 import {useTheme} from '../../common/ThemeContext';
 
@@ -17,7 +17,7 @@ function Carvalho() {
   const themeIcon = theme === 'light' ? sun : moon;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
+  const instagramIcon = theme === 'light' ? instagramLight : instagramDark;
 
   return <section id='carvalho' className={styles.container}>
     <div className={styles.colorModeContainer}> 
@@ -37,8 +37,8 @@ function Carvalho() {
         <img src={githubIcon} alt="GitHub Icon" />
         </a>
 
-        <a href="https://twitter.com/cttbiel/" target="_blank">
-        <img src={twitterIcon} alt="Twitter Icon" />
+        <a href="https://www.instagram.com/cttbiel/" target="_blank">
+        <img src={instagramIcon} alt="Instagram Icon" />
         </a>
 
       </span>
