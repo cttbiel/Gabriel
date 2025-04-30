@@ -12,8 +12,8 @@ function Projects() {
         <div className={styles.projectsContainer}>
             <ProjectCard
                 src={musique} link="https://github.com/cttbiel/spotify" 
-                h3="Feel the Rythm of Life"
-                p={"Musiqué"}
+                h3="Musique"
+                p={"Feel the Rythm of Life"}
             />
 
             <ProjectCard
