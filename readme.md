@@ -28,7 +28,7 @@ The background, inspired by *Miles Morales*, is a personal reference, since frie
 
 ## 📸 Preview
 
-![Portfolio Screenshot](./src/assets/HomeScreen.png)
+![Portfolio Screenshot](./src/assets/Home%20Screen%20white%20desktop.png)
 
 ---
 
