@@ -42,7 +42,6 @@ If you'd like to connect, collaborate, or just chat — feel free to reach out!
 
 🎨 Special thanks to **Letícia** for the amazing cartoon art featured in this portfolio.  
 (*You can check out her work on [LinkedIn](https://www.linkedin.com/in/let%C3%ADcia-pedrosa-342397152/).*)  
-<!-- Substitua pelo link real do perfil dela! -->
 
 ✨ Thank you for visiting my portfolio!  
 If you like the project, don't forget to leave a ⭐, fork it, or send feedback.
