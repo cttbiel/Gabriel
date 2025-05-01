@@ -49,3 +49,22 @@ If you'd like to connect, collaborate, or just chat — feel free to reach out!
 
 ✨ Thank you for visiting my portfolio!  
 If you like the project, don't forget to leave a ⭐, fork it, or send feedback.
+
+
+
+
+---
+
+## 🇧🇷 Leia em Português
+
+Esse portfólio foi criado para mostrar meus projetos, habilidades e trajetória profissional.  
+Você pode alternar entre os temas claro e escuro, e também escolher o idioma (Português, Inglês ou Francês) clicando no ícone de bandeira no topo do site.  
+Sinta-se à vontade para explorar, deixar uma estrela ⭐ ou entrar em contato comigo!
+
+---
+
+## 🇫🇷 Lire en Français
+
+Ce portfolio a été conçu pour présenter mes projets, mes compétences et mon parcours professionnel.  
+Vous pouvez basculer entre les thèmes clair/sombre et les langues (français, anglais, portugais) en cliquant sur l’icône du drapeau.  
+Merci pour votre visite ! ⭐
