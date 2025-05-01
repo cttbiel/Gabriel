@@ -24,7 +24,7 @@
           }
         }
       }
-    
+  
       a {
         width: fit-content;
         align-self: center;
@@ -52,19 +52,42 @@
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
       }
     }
-    
+
     .colorModeContainer {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .carvalho {
+      max-width: 200px;
+    }
+    
+    .iconWrapper {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 10px 5px;
+      height: 100%;
     }
     
     .colorMode {
-      position: absolute;
-      right: 0;
       width: 25px;
+      cursor: pointer;
     }
     
-    .colorMode:hover {
+    .languageToggle {
+      width: 28px;
+      height: 28px;
       cursor: pointer;
+      margin-top: auto;
     }
     
     .description {

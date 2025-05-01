@@ -20,6 +20,3 @@ function App() {
 }
 
 export default App;
-
-
-/*1:48:56*/
