@@ -10,6 +10,9 @@ Here you can explore my projects, skills, and a little about my journey as a Com
 This portfolio was designed to reflect my personal style and professional ambitions.  
 The main goal is to offer visitors a clean and smooth experience while navigating through my work.
 
+🌐 A new feature recently added is the **multi-language support**. You can now explore the site in **English, Portuguese**, and **French**, easily switching between them with a simple click on the flag icon.  
+🌙 It also includes **dark and light themes**, letting you choose the best visual experience for your environment.
+
 An interesting detail: the cartoon avatar featured on this page was created by my dear teacher and talented artist **Letícia**, as a parting gift when I completed the "Digital Game Programming" course.  
 The background, inspired by *Miles Morales*, is a personal reference, since friends often said I reminded them of the character — and as a fan, I even have Spider-Man cosplays (Peter Parker and Miles) in my collection.
 
@@ -22,6 +25,7 @@ The background, inspired by *Miles Morales*, is a personal reference, since frie
 - ⚡ [Node.js](https://nodejs.org/)
 - 💡 JavaScript
 - 💻 HTML & CSS
+- 🌐 Multi-language + Theme toggle (custom implementation using Context API)
 - 🎨 Canva (for custom icons and visuals)
 
 ---
