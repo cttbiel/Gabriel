@@ -1,5 +1,5 @@
 import styles from './CarvalhoStyles.module.css';
-import spideygab from '../../assets/spideygab.png';
+import portraitImg from '../../assets/gabriel_portrait.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import linkedinLight from '../../assets/linkedin light.png';
@@ -11,7 +11,7 @@ import instagramDark from '../../assets/instagram.png';
 import CVen from '../../assets/Gabriel Carvalho Resume.pdf';
 import CVfr from '../../assets/Gabriel Carvalho CV.pdf';
 import CVpt from '../../assets/Gabriel Carvalho Curriculo.pdf';
-import {useTheme} from '../../common/ThemeContext';
+import { useTheme } from '../../common/ThemeContext';
 import { useContext } from 'react';
 import { LanguageContext } from '../../common/LanguageContext';
 import flagPT from '../../assets/brasil.png';
@@ -19,7 +19,7 @@ import flagEN from '../../assets/england.png';
 import flagFR from '../../assets/france.png';
 
 function Carvalho() {
-  const { theme, toggleTheme} = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const { texts, toggleLanguage, nextFlag } = useContext(LanguageContext);
 
   const themeIcon = theme === 'light' ? sun : moon;
@@ -40,43 +40,101 @@ function Carvalho() {
     fr: CVfr
   };
 
-  const currentCV = cvMap[texts.language];
+  const currentCV = cvMap[texts.language] || CVpt;
 
   return (
     <section id='carvalho' className={styles.container}>
-      <div className={styles.colorModeContainer}> 
-        <img className={styles.carvalho} src={spideygab} alt="Profile Picture of Gabriel Carvalho" />
-        <div className={styles.iconWrapper}>
-          <img className={styles.colorMode} src={themeIcon} alt="Color mode icon" onClick={toggleTheme}/>
-          <img className={styles.languageToggle} src={nextFlagIcon} alt="Switch language" onClick={toggleLanguage} />
+      {/* Top Controls Bar */}
+      <div className={styles.topBar}>
+        <div className={styles.brandPill}>
+          <span className={styles.statusDot}></span>
+          <span>Gabriel Carvalho</span>
+        </div>
+        <div className={styles.controlsGroup}>
+          <button 
+            type="button" 
+            className={styles.controlBtn} 
+            onClick={toggleTheme} 
+            title="Alternar Tema / Toggle Theme"
+            aria-label="Alternar Tema"
+          >
+            <img src={themeIcon} alt="Theme mode" />
+          </button>
+          <button 
+            type="button" 
+            className={styles.controlBtn} 
+            onClick={toggleLanguage} 
+            title="Mudar Idioma / Change Language"
+            aria-label="Mudar Idioma"
+          >
+            <img src={nextFlagIcon} alt="Next language" />
+          </button>
         </div>
       </div>
-    
-      <div className={styles.info}>
-        <h1 >Gabriel <br /> Carvalho</h1>
-        <h2>{texts.header.role}</h2>
-        <span>
-          <a href="https://linkedin.com/in/cttbiel/" target="_blank">
-        <img src={linkedinIcon} alt="LinkedIn Icon" />
-        </a>
 
-        <a href="https://github.com/cttbiel/" target="_blank">
-        <img src={githubIcon} alt="GitHub Icon" />
-        </a>
+      {/* Main Hero Grid */}
+      <div className={styles.heroGrid}>
+        {/* Left / Info column */}
+        <div className={styles.info}>
+          <div className={styles.badge}>
+            {texts.header.badge}
+          </div>
+          <h1 className={styles.name}>Gabriel Carvalho</h1>
+          <h2 className={styles.role}>{texts.header.role}</h2>
+          <p className={styles.description}>{texts.header.description}</p>
 
-        <a href="https://www.instagram.com/cttbiel/" target="_blank">
-        <img src={instagramIcon} alt="Instagram Icon" />
-        </a>
+          <div className={styles.actions}>
+            <a href={currentCV} download className={styles.resumeLink}>
+              <button type="button" className={styles.primaryBtn}>{texts.header.resume}</button>
+            </a>
+            <div className={styles.socials}>
+              <a href="https://linkedin.com/in/cttbiel/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={styles.socialBtn}>
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/cttbiel/" target="_blank" rel="noreferrer" aria-label="GitHub" className={styles.socialBtn}>
+                <img src={githubIcon} alt="GitHub" />
+              </a>
+              <a href="https://www.instagram.com/cttbiel/" target="_blank" rel="noreferrer" aria-label="Instagram" className={styles.socialBtn}>
+                <img src={instagramIcon} alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-      </span>
-      <p className={styles.description}>{texts.header.description}</p>
+        {/* Right / Photo Column */}
+        <div className={styles.avatarWrapper}>
+          <div className={styles.photoFrame}>
+            <img 
+              className={styles.portrait} 
+              src={portraitImg} 
+              alt="Gabriel Carvalho - Engenheiro de Computação & Software" 
+            />
+          </div>
+        </div>
+      </div>
 
-        <a href={currentCV} download>
-          <button className="hover">{texts.header.resume}</button>
-        </a>
+      {/* Trajectory & Experience Cards */}
+      <div className={styles.trajectoryContainer}>
+        <div className={styles.trajectoryCard}>
+          <div className={styles.trajHeader}>
+            <span className={styles.companyTag}>GOL LINHAS AÉREAS</span>
+            <span className={styles.techTag}>BPR · BI · AEROTECH TV</span>
+          </div>
+          <h3 className={styles.trajTitle}>{texts.header.golRole}</h3>
+          <p className={styles.trajDesc}>{texts.header.golDesc}</p>
+        </div>
+
+        <div className={styles.trajectoryCard}>
+          <div className={styles.trajHeader}>
+            <span className={styles.companyTag}>CTTLAB</span>
+            <span className={styles.techTag}>PERFORMANCE · CRO · META CAPI</span>
+          </div>
+          <h3 className={styles.trajTitle}>{texts.header.cttlabRole}</h3>
+          <p className={styles.trajDesc}>{texts.header.cttlabDesc}</p>
+        </div>
       </div>
     </section>
-  );    
+  );
 }
 
 export default Carvalho;

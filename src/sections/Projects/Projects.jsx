@@ -1,48 +1,71 @@
 import styles from './ProjectsStyles.module.css';
-import musique from '../../assets/musique.png';
 import ProjectCard from '../../common/ProjectCard';
-import secretNumber from '../../assets/Secret Number.jpg'
-import brickStore from '../../assets/BrickStore Logo.png';
-import textDecoder from '../../assets/textdecoder.png';
+import saudeMaterImg from '../../assets/saudemater_case.png';
+import alessandraImg from '../../assets/AlemDasAparencias.png';
+import alessandraPDF from '../../assets/Alem_das_Aparencias_Alessandra_Nogueira.pdf';
+import radarAcademicoImg from '../../assets/RadarAcademico_clean.png';
+import brickStoreImg from '../../assets/BrickStore_clean.png';
 import { useContext } from 'react';
 import { LanguageContext } from '../../common/LanguageContext';
 
 function Projects() {
-
-    const { texts } = useContext(LanguageContext);
+  const { texts } = useContext(LanguageContext);
+  const p = texts.projects;
 
   return (
     <section id='projects' className={styles.container}>
-        <h1 className='sectionTitle'>{texts.projects.title}</h1>
-        <div className={styles.projectsContainer}>
-            <ProjectCard
-                src={musique} link="https://github.com/cttbiel/spotify" 
-                h3="Musique"
-                p={texts.projects.musique}
-            />
+      <h2 className='sectionTitle'>{p.title}</h2>
+      <div className={styles.projectsGrid}>
+        {/* 1. Saúde Mater (Cliente Comercial - Renda Real) */}
+        <ProjectCard
+          src={saudeMaterImg}
+          link="https://saudemater.com.br"
+          tag={p.saudemater.tag}
+          title={p.saudemater.title}
+          description={p.saudemater.desc}
+          stats={p.saudemater.stats}
+          actionText={p.saudemater.action}
+          isDownload={false}
+        />
 
-            <ProjectCard
-                src={secretNumber} link="https://github.com/cttbiel/secret_number_game" 
-                h3={texts.projects.secretn}
-                p={texts.projects.secret}
-            />
+        {/* 2. Além das Aparências - Alessandra Nogueira (Cliente Comercial - Renda Real) */}
+        <ProjectCard
+          src={alessandraImg}
+          link={alessandraPDF}
+          tag={p.alessandra.tag}
+          title={p.alessandra.title}
+          description={p.alessandra.desc}
+          stats={p.alessandra.stats}
+          actionText={p.alessandra.action}
+          isDownload={true}
+        />
 
-            <ProjectCard
-                src={brickStore} link="https://github.com/cttbiel/brickstore" 
-                h3="BrickStore"
-                p={texts.projects.brick}
-            />
+        {/* 3. Radar Acadêmico (Plataforma SaaS & Comunidade) */}
+        <ProjectCard
+          src={radarAcademicoImg}
+          link="https://radaracademico.vercel.app"
+          tag={p.radaracademico.tag}
+          title={p.radaracademico.title}
+          description={p.radaracademico.desc}
+          stats={p.radaracademico.stats}
+          actionText={p.radaracademico.action}
+          isDownload={false}
+        />
 
-            <ProjectCard
-                src={textDecoder} link="https://github.com/cttbiel/text-decoder" 
-                h3={texts.projects.decodern}
-                p={texts.projects.decoder}
-            />
-        </div>
+        {/* 4. BrickStore (E-commerce & Varejo) */}
+        <ProjectCard
+          src={brickStoreImg}
+          link="https://brickstore.vercel.app"
+          tag={p.brickstore.tag}
+          title={p.brickstore.title}
+          description={p.brickstore.desc}
+          stats={p.brickstore.stats}
+          actionText={p.brickstore.action}
+          isDownload={false}
+        />
+      </div>
     </section>
-
-);
-  
+  );
 }
 
-export default Projects
+export default Projects;

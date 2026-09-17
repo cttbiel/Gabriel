@@ -1,70 +1,78 @@
-# 🚀 Gabriel Carvalho — Personal Portfolio
+# 🚀 Gabriel Carvalho — Personal Portfolio (v2.0)
 
-Welcome to my **Personal Portfolio**!  
-Here you can explore my projects, skills, and a little about my journey as a Computer Engineering student.
+Portfólio pessoal e vitrine de engenharia de **Gabriel Carvalho** — Graduando em Engenharia de Computação no **CEFET-MG**, Líder de Projetos na **GOL Linhas Aéreas** e Fundador da **CTTLAB**.
 
----
-
-## 💡 About This Project
-
-This portfolio was designed to reflect my personal style and professional ambitions.  
-The main goal is to offer visitors a clean and smooth experience while navigating through my work.
-
-🌐 A new feature recently added is the **multi-language support**. You can now explore the site in **English, Portuguese**, and **French**, easily switching between them with a simple click on the flag icon.  
-🌙 It also includes **dark and light themes**, letting you choose the best visual experience for your environment.
-
-An interesting detail: the cartoon avatar featured on this page was created by my dear teacher and talented artist **Letícia**, as a parting gift when I completed the "Digital Game Programming" course.  
-The background, inspired by *Miles Morales*, is a personal reference, since friends often said I reminded them of the character — and as a fan, I even have Spider-Man cosplays (Peter Parker and Miles) in my collection.
+🌐 **Deploy Oficial**: [gabrielcarvalho.vercel.app](https://gabrielcarvalho.vercel.app/)  
+📂 **Repositório**: [github.com/cttbiel/Gabriel](https://github.com/cttbiel/Gabriel)
 
 ---
 
-## 🛠️ Technologies Used
+## 💡 Sobre o Portfólio
 
-- ⚡ [React](https://reactjs.org/)
-- ⚡ [Vite](https://vitejs.dev/)
-- ⚡ [Node.js](https://nodejs.org/)
-- 💡 JavaScript
-- 💻 HTML & CSS
-- 🌐 Multi-language + Theme toggle (custom implementation using Context API)
-- 🎨 Canva (for custom icons and visuals)
+O portfólio v2.0 foi arquitetado para refletir maturidade técnica, rigor de engenharia de software e capacidade comprovada de entrega em produção.
 
----
-
-## 📸 Preview
-
-![Portfolio Screenshot](./src/assets/Home%20Screen%20light%20pt-fr.png)
-
----
-
-## 💬 Contact
-
-If you'd like to connect, collaborate, or just chat — feel free to reach out!
-
-📧 Email: cttbiel@gmail.com
+### Principais Destaques:
+- 🌐 **Internacionalização Nativa (i18n)**: Suporte completo e sincronizado em **Português**, **Inglês** e **Francês**.
+- 🌓 **Design System Dark / Light**: Paleta espacial sofisticada com variáveis CSS centralizadas, cards com acabamento sutil e tipografia com `Plus Jakarta Sans` e `Rubik`.
+- 📊 **Cases de Alta Performance**:
+  - **Saúde Mater**: Ecossistema de saúde com carregamento em **1.1s no 4G**, **97/100 no Lighthouse**, servidor Apache e telemetria de funil via Meta Conversions API (CAPI).
+  - **Além das Aparências (Alessandra Nogueira)**: Media Kit interativo construído sob o paradigma **PDF-First** para apresentações editoriais.
+  - **BrickStore**: Plataforma e-commerce moderna em **Next.js 15, React 19, Prisma ORM e Tailwind CSS**.
+  - **Musique**: Web audio player com interface dark neon e manipulação direta da **HTML5 Web Audio API**.
+- 💼 **Trajetória & Liderança**: Apresentação de liderança de projetos, Business Process Reengineering (BPR) e sustentação da rede corporativa Aerotech TV na GOL Linhas Aéreas.
+- ⚡ **Competências em 3 Pilares**: Organização estruturada em *Engenharia de Software & Web*, *Arquitetura & Infraestrutura* e *Dados, Telemetria & Processos*.
 
 ---
 
-🎨 Special thanks to **Letícia** for the amazing cartoon art featured in this portfolio.  
-(*You can check out her work on [LinkedIn](https://www.linkedin.com/in/let%C3%ADcia-pedrosa-342397152/).*)  
+## 🛠️ Stack Tecnológica
 
-✨ Thank you for visiting my portfolio!  
-If you like the project, don't forget to leave a ⭐, fork it, or send feedback.
-
-
-
-
----
-
-## 🇧🇷 Leia em Português
-
-Esse portfólio foi criado para mostrar meus projetos, habilidades e trajetória profissional.  
-Você pode alternar entre os temas claro e escuro, e também escolher o idioma (Português, Inglês ou Francês) clicando no ícone de bandeira no topo do site.  
-Sinta-se à vontade para explorar, deixar uma estrela ⭐ ou entrar em contato comigo!
+- ⚡ **React 19** + **Vite**
+- 💡 **TypeScript & JavaScript (ES6+)**
+- 🎨 **CSS Modules** + Custom Properties (Variáveis CSS)
+- 🌐 **Context API** (Gerenciamento de Tema e Idioma)
+- 📄 **Assets em Alta Resolução**: Retrato profissional de estúdio e mockups de alta fidelidade
 
 ---
 
-## 🇫🇷 Lire en Français
+## 📜 Histórico & Evolução
 
-Ce portfolio a été conçu pour présenter mes projets, mes compétences et mon parcours professionnel.  
-Vous pouvez basculer entre les thèmes clair/sombre et les langues (français, anglais, portugais) en cliquant sur l’icône du drapeau.  
-Merci pour votre visite ! ⭐
+> **Nota de Memória Afetiva (v1.0)**:  
+> Na versão 1.0 deste portfólio (início de 2025), o avatar principal era uma ilustração em desenho criada como presente de formatura pela talentosa artista e professora **Letícia**, inspirada no *Miles Morales* e na paixão de Gabriel por cosplays do Homem-Aranha. Esse marco inicial continua preservado com muito carinho no histórico do projeto, enquanto a v2.0 assume a fotografia real de estúdio e o posicionamento de Engenheiro Pleno/Sênior.
+
+---
+
+## 🚀 Como Executar Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/cttbiel/Gabriel.git
+   cd Gabriel
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Para compilar para produção:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📬 Contato
+
+- 📧 **E-mail**: [cttbiel@gmail.com](mailto:cttbiel@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/cttbiel](https://linkedin.com/in/cttbiel/)
+- 🐙 **GitHub**: [github.com/cttbiel](https://github.com/cttbiel/)
+- 📸 **Instagram**: [@cttbiel](https://www.instagram.com/cttbiel/)
+
+---
+
+© 2026 Gabriel Carvalho. Todos os direitos reservados.

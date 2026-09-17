@@ -3,16 +3,17 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../common/LanguageContext';
 
 function Footer() {
-
   const { texts } = useContext(LanguageContext);
+  const currentYear = new Date().getFullYear();
 
   return (
-    <section id='footer' className={styles.container} >
-        <p>&copy; 2025 Gabriel Carvalho. <br />
-          {texts.footer.rights}
-        </p>
-    </section>
-  )
+    <footer id='footer' className={styles.container}>
+      <p>
+        &copy; {currentYear} Gabriel Carvalho. <br className={styles.breakMobile} />
+        {texts.footer.rights}
+      </p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

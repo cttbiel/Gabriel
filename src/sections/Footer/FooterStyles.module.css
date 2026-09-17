@@ -1,7 +1,22 @@
 .container {
-    text-align: center;
-    p {
-        font-size: 16px;
-        color: var(--footer-text-color);
-    }
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid var(--divider-color);
+  width: 100%;
+}
+
+.container p {
+  font-size: 14px;
+  color: var(--footer-text-color);
+  line-height: 1.6;
+}
+
+.breakMobile {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .breakMobile {
+    display: none;
+  }
 }

@@ -1,126 +1,317 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    height: 100dvh;
-    min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
 
-    .carvalho {
-        max-width: 200px;
-    }
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--divider-color);
+}
 
-    span {
-        display: flex;
-        gap: 25px;
-        justify-content: center;
-    
-        a {
-          margin: 0;
-    
-          img {
-            width: 30px;
-          }
-        }
-      }
-  
-      a {
-        width: fit-content;
-        align-self: center;
-      }
-    
-      button {
-        background-color: var(--btn-color);
-        color: var(--btn-text-color);
-        border: none;
-        border-radius: 20px;
-        width: 126px;
-        height: 50px;
-        font-size: 20px;
-        font-weight: bold;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-      }
-    
-      button:hover {
-        transform: scale(1.05);
-      }
-    
-      button:active {
-        transform: translateY(2px);
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-      }
-    }
+.brandPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: var(--accent-badge-bg);
+  border: 1px solid var(--accent-badge-border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-badge-text);
+  letter-spacing: 0.04em;
+}
 
-    .colorModeContainer {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    
-    .carvalho {
-      max-width: 200px;
-    }
-    
-    .iconWrapper {
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding: 10px 5px;
-      height: 100%;
-    }
-    
-    .colorMode {
-      width: 25px;
-      cursor: pointer;
-    }
-    
-    .languageToggle {
-      width: 28px;
-      height: 28px;
-      cursor: pointer;
-      margin-top: auto;
-    }
-    
-    .description {
-      max-width: 24ch;
-      text-align: center;
-      margin: 0 auto;
-    }
-    
-    .info {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+  display: inline-block;
+}
 
-    @media (width >= 800px) {
-      .container {
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-evenly;
+.controlsGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-        .carvalho {
-          max-width: 350px;
-          width: 350px;
-        }
-      }
-    }
+.controlBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
 
-    @media (width >= 1400px) {
-      .container {
+.controlBtn:hover {
+  transform: translateY(-2px);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-        .carvalho {
-          max-width: 400px;
-          width: 400px;
-        }
-      }
-    }
+.controlBtn img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.heroGrid {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 36px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.badge {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: var(--accent-badge-bg);
+  border: 1px solid var(--accent-badge-border);
+  color: var(--accent-badge-text);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+.role {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  letter-spacing: -0.01em;
+}
+
+.description {
+  max-width: 58ch;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.resumeLink {
+  text-decoration: none;
+}
+
+.primaryBtn {
+  background: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  letter-spacing: 0.02em;
+}
+
+.primaryBtn:hover {
+  background: var(--btn-hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: all 0.2s ease;
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.socialBtn img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.avatarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoFrame {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 28px;
+  padding: 6px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4), rgba(37, 99, 235, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--card-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+}
+
+/* Trajectory Cards Section */
+.trajectoryContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.trajectoryCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+.trajectoryCard:hover {
+  border-color: var(--card-hover-border);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.trajHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.companyTag {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  letter-spacing: 0.06em;
+}
+
+.techTag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--accent-badge-bg);
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.trajTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.35;
+}
+
+.trajDesc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+@media (min-width: 860px) {
+  .heroGrid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .info {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .badge {
+    align-self: flex-start;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .photoFrame {
+    width: 300px;
+    height: 300px;
+    border-radius: 36px;
+  }
+
+  .portrait {
+    border-radius: 30px;
+  }
+
+  .trajectoryContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
