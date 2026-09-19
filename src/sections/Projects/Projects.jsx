@@ -1,10 +1,10 @@
 import styles from './ProjectsStyles.module.css';
 import ProjectCard from '../../common/ProjectCard';
 import saudeMaterImg from '../../assets/saudemater_case.png';
-import alessandraImg from '../../assets/AlemDasAparencias.png';
+import alessandraImg from '../../assets/alessandra_case.png';
 import alessandraPDF from '../../assets/Alem_das_Aparencias_Alessandra_Nogueira.pdf';
-import radarAcademicoImg from '../../assets/RadarAcademico_clean.png';
-import brickStoreImg from '../../assets/BrickStore_clean.png';
+import radarAcademicoImg from '../../assets/radaracademico_case.png';
+import brickStoreImg from '../../assets/brickstore_case.png';
 import { useContext } from 'react';
 import { LanguageContext } from '../../common/LanguageContext';
 
