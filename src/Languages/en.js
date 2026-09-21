@@ -3,13 +3,13 @@ export default {
   header: {
     role: 'Computer & Software Engineer',
     badge: 'CEFET-MG · GOL · CTTLAB',
-    description: 'Computer Engineering student at CEFET-MG and Founder of CTTLAB. Specializing in technical project leadership, software engineering, and mission-critical systems in production.',
-    resume: 'Resume',
+    description: 'I build high-performance web systems for real clients. Computer Engineering student at CEFET-MG, with project leadership experience at GOL Linhas Aéreas and commercial software delivered through CTTLAB.',
+    resume: 'Download Resume',
     experienceBadge: 'Trajectory & Leadership',
     golRole: 'Project Lead & Process Optimization · GOL Linhas Aéreas',
-    golDesc: 'Departmental workflow redesign, BPR, and operational bottleneck mitigation; strategic Business Intelligence development and infrastructure maintenance for Aerotech TV corporate network.',
+    golDesc: 'Departmental workflow redesign via BPR, operational bottleneck elimination, strategic Business Intelligence development, and maintenance of the Aerotech TV corporate in-flight network infrastructure.',
     cttlabRole: 'Founder & Principal Engineer · CTTLAB',
-    cttlabDesc: 'High-conversion digital ecosystems, low-latency web engineering (1.1s on 4G), end-to-end telemetry (Meta CAPI & GA4), and custom software solutions.'
+    cttlabDesc: 'Institutional websites in production with measurable results: 1.1s load time on 4G, 97/100 Lighthouse score, and end-to-end funnel telemetry via Meta CAPI & GA4. Serving real clients in BH, Brazil.'
   },
 
   projects: {
@@ -17,30 +17,30 @@ export default {
     saudemater: {
       tag: 'COMMERCIAL CLIENT · PERFORMANCE & CRO',
       title: 'Saúde Mater',
-      desc: 'High-performance web engineering for healthcare network in Belo Horizonte. 1.1s 4G load time, 97/100 Lighthouse, and funnel telemetry powered by Meta CAPI and Apache.',
+      desc: 'Institutional website delivered for a healthcare network in Belo Horizonte. 1.1s 4G load time, 97/100 Google Lighthouse score, and full conversion tracking via Meta CAPI & Apache GZIP.',
       action: 'Visit Live Site',
-      stats: '1.1s 4G · 97 Lighthouse · Meta CAPI'
+      stats: '1.1s on 4G · 97/100 Lighthouse · Meta CAPI'
     },
     alessandra: {
       tag: 'COMMERCIAL CLIENT · PDF-FIRST',
-      title: 'Além das Aparências · Alessandra Nogueira',
-      desc: 'Commissioned institutional Media Kit and editorial presentation engineered with a high-fidelity PDF-First architecture for keynote lecture bookings.',
+      title: 'Além das Aparências — Alessandra Nogueira',
+      desc: 'Commissioned institutional Media Kit for keynote speaker Alessandra Nogueira. High-fidelity PDF-First editorial architecture designed for professional lecture bookings at schools and corporations.',
       action: 'Download Media Kit (PDF)',
-      stats: 'PDF-First · 10 Slides · Editorial Design'
+      stats: 'PDF-First · 10 Slides · High Fidelity'
     },
     radaracademico: {
-      tag: 'SAAS & ACADEMIC PLATFORM',
+      tag: 'PERSONAL PROJECT · SAAS & COMMUNITY',
       title: 'Radar Acadêmico',
-      desc: 'Collaborative academic platform empowering university students to evaluate courses and professors prior to enrollment. Data modeling, real-time reviews, and dark neon UI.',
+      desc: 'Collaborative platform where university students rate courses and professors before enrollment. Built with Next.js + TypeScript + PostgreSQL, with 1.2k+ active users and real-time reviews.',
       action: 'Explore Platform',
       stats: '1.2k+ Students · 89 Courses · 2.1k+ Reviews'
     },
     brickstore: {
-      tag: 'E-COMMERCE & RETAIL',
+      tag: 'PERSONAL PROJECT · FULL-STACK & E-COMMERCE',
       title: 'BrickStore',
-      desc: 'Brazilian construction materials e-commerce platform. Interactive catalog, intuitive categorization, dynamic cart, and high-conversion retail UX.',
-      action: 'Launch E-commerce',
-      stats: 'E-commerce · Catalog & Cart · Vercel'
+      desc: 'Construction materials e-commerce with smart catalog, advanced filters, dynamic cart, and secure authentication. Built with Next.js 15, Prisma ORM, TypeScript, and Tailwind CSS.',
+      action: 'View on GitHub',
+      stats: 'Next.js 15 · Prisma ORM · Tailwind CSS'
     }
   },
 
@@ -48,15 +48,15 @@ export default {
     title: 'Technical Stack',
     p1Title: 'Software & Web Engineering',
     p2Title: 'Architecture & Infrastructure',
-    p3Title: 'Data, Telemetry & Process Engineering'
+    p3Title: 'Data, BI & Telemetry'
   },
 
   contact: {
-    title: 'Get in Touch',
-    subtitle: 'Looking to build scalable solutions or optimize your digital infrastructure?',
-    name: 'Name',
-    message: 'Message',
-    email: 'Email',
+    title: "Let's work together",
+    subtitle: 'Need a high-performance website, a digital platform, or a custom software solution? Get in touch.',
+    name: 'Your name',
+    message: 'Describe the project or opportunity',
+    email: 'Your email',
     submit: 'Send Message',
   },
 

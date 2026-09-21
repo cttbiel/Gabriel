@@ -13,23 +13,21 @@ function Skills() {
   const s = texts.skills;
 
   const pillar1Skills = [
-    'React 19',
-    'Next.js 15',
-    'TypeScript',
-    'JavaScript (ES6+)',
-    'Node.js',
-    'Tailwind CSS',
-    'HTML5 / CSS3 Moderno'
+    'React 19 & Next.js 15',
+    'TypeScript & JavaScript (ES6+)',
+    'Node.js & REST APIs',
+    'Tailwind CSS & CSS Modules',
+    'HTML5 & CSS3 Moderno',
+    'Python (automação & scripting)',
   ];
 
   const pillar2Skills = [
-    'Apache HTTP Server',
-    'GZIP & Cache Imutável',
+    'Apache HTTP Server & GZIP',
     'Git & GitHub Flow',
-    'Arquitetura Web & SEO',
+    'SEO Técnico & Performance Web',
+    'Vercel & Deploy em Cloud',
     'Linux & Bash Scripting',
-    'Vercel & Cloud Deploy',
-    'Automação Python'
+    'Prisma ORM & PostgreSQL',
   ];
 
   const pillar3Skills = [
@@ -38,8 +36,7 @@ function Skills() {
     'Google Analytics 4 & GTM',
     'Mapeamento de Processos (BPR)',
     'Indicadores Estratégicos (KPIs)',
-    'Telemetria de Funil',
-    'Mitigação de Bus Factor'
+    'Telemetria de Funil & Conversão',
   ];
 
   return (
