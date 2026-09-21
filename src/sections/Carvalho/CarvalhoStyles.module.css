@@ -185,6 +185,24 @@
   object-fit: contain;
 }
 
+/* CTTLAB pill button (logo + label) */
+.cttlabBtn {
+  width: auto;
+  padding: 0 14px;
+  gap: 8px;
+  color: var(--btn-color);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.cttlabLogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .avatarWrapper {
   display: flex;
   justify-content: center;
@@ -272,6 +290,37 @@
   font-size: 15px;
   line-height: 1.6;
   color: var(--text-muted);
+}
+
+/* Links do card de trajetória CTTLAB */
+.trajLinks {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--divider-color);
+  margin-top: 2px;
+}
+
+.trajLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.trajLink:hover {
+  color: var(--accent-cyan);
+}
+
+.trajLink svg {
+  flex-shrink: 0;
 }
 
 @media (min-width: 860px) {

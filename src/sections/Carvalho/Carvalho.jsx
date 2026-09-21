@@ -6,8 +6,8 @@ import linkedinLight from '../../assets/linkedin light.png';
 import linkedinDark from '../../assets/linkedin dark.png';
 import githubLight from '../../assets/github light.png';
 import githubDark from '../../assets/github dark.png';
-import instagramLight from '../../assets/instagram light.png';
-import instagramDark from '../../assets/instagram.png';
+import cttlabLogoBlue from '../../assets/cttlab_logo_blue.png';
+import cttlabLogoWhite from '../../assets/cttlab_logo_white.png';
 import CVen from '../../assets/Gabriel Carvalho Resume.pdf';
 import CVfr from '../../assets/Gabriel Carvalho CV.pdf';
 import CVpt from '../../assets/Gabriel Carvalho Curriculo.pdf';
@@ -25,7 +25,7 @@ function Carvalho() {
   const themeIcon = theme === 'light' ? sun : moon;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const instagramIcon = theme === 'light' ? instagramLight : instagramDark;
+  const cttlabIcon = theme === 'light' ? cttlabLogoBlue : cttlabLogoWhite;
 
   const flagIcons = {
     en: flagEN,
@@ -94,8 +94,9 @@ function Carvalho() {
               <a href="https://github.com/cttbiel/" target="_blank" rel="noreferrer" aria-label="GitHub" className={styles.socialBtn}>
                 <img src={githubIcon} alt="GitHub" />
               </a>
-              <a href="https://www.instagram.com/cttbiel/" target="_blank" rel="noreferrer" aria-label="Instagram" className={styles.socialBtn}>
-                <img src={instagramIcon} alt="Instagram" />
+              <a href="https://cttlab.vercel.app" target="_blank" rel="noreferrer" aria-label="CTTLAB" className={`${styles.socialBtn} ${styles.cttlabBtn}`}>
+                <img src={cttlabIcon} alt="CTTLAB" className={styles.cttlabLogo} />
+                <span>CTTLAB</span>
               </a>
             </div>
           </div>
@@ -131,6 +132,31 @@ function Carvalho() {
           </div>
           <h3 className={styles.trajTitle}>{texts.header.cttlabRole}</h3>
           <p className={styles.trajDesc}>{texts.header.cttlabDesc}</p>
+          <div className={styles.trajLinks}>
+            <a href="https://cttlab.vercel.app" target="_blank" rel="noreferrer" className={styles.trajLink}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              Site
+            </a>
+            <a href="https://www.instagram.com/cttlab/" target="_blank" rel="noreferrer" className={styles.trajLink}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram
+            </a>
+            <a href="https://linkedin.com/company/cttlab" target="_blank" rel="noreferrer" className={styles.trajLink}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </section>
