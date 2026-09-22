@@ -88,15 +88,35 @@ function Carvalho() {
               <button type="button" className={styles.primaryBtn}>{texts.header.resume}</button>
             </a>
             <div className={styles.socials}>
-              <a href="https://linkedin.com/in/cttbiel/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={styles.socialBtn}>
+              <a 
+                href="https://linkedin.com/in/cttbiel/" 
+                target="_blank" 
+                rel="noreferrer" 
+                aria-label="LinkedIn" 
+                title="LinkedIn | Gabriel Carvalho" 
+                className={styles.socialBtn}
+              >
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/cttbiel/" target="_blank" rel="noreferrer" aria-label="GitHub" className={styles.socialBtn}>
+              <a 
+                href="https://github.com/cttbiel/" 
+                target="_blank" 
+                rel="noreferrer" 
+                aria-label="GitHub" 
+                title="GitHub | @cttbiel" 
+                className={styles.socialBtn}
+              >
                 <img src={githubIcon} alt="GitHub" />
               </a>
-              <a href="https://cttlab.vercel.app" target="_blank" rel="noreferrer" aria-label="CTTLAB" className={`${styles.socialBtn} ${styles.cttlabBtn}`}>
+              <a 
+                href="https://cttlab.vercel.app" 
+                target="_blank" 
+                rel="noreferrer" 
+                aria-label="CTTLAB" 
+                title="CTTLAB | Software & Engenharia Digital" 
+                className={styles.socialBtn}
+              >
                 <img src={cttlabIcon} alt="CTTLAB" className={styles.cttlabLogo} />
-                <span>CTTLAB</span>
               </a>
             </div>
           </div>

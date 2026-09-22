@@ -185,22 +185,10 @@
   object-fit: contain;
 }
 
-/* CTTLAB pill button (logo + label) */
-.cttlabBtn {
-  width: auto;
-  padding: 0 14px;
-  gap: 8px;
-  color: var(--btn-color);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-}
-
 .cttlabLogo {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
-  flex-shrink: 0;
 }
 
 .avatarWrapper {
